@@ -2,11 +2,12 @@
 Matthew Friedrich
 CSE 163 Section AG
 
-This file contains the functions get_q1_plot, ______,
+This file contains the functions get_q1_plot, get_q2_plot,
 get_q3_xy_plot, and get_q3_map_plot. Each function takes
 the output from a respective function in final_project_processing.py
-as a parameter. Then, each function outputs a plot, _____ as an
-Altair object and _____ as a Matplotlib object, which then can be saved
+as a parameter. Then, each function outputs a plot, get_q1_plot and
+get_q3_xy_plot as an Altair object and get_q2_plot and
+get_q3_map_plot as a Matplotlib object, which then can be saved
 in main. Altair plots are interactive, therefore they must be saved
 as a '.html' file.
 '''
@@ -106,7 +107,7 @@ def get_q2_plot(q2_map_df):
     world.plot(ax=ax, color='#EEEEEE', edgecolor='#FFFFFF')
     q2_map_df.plot(ax=ax,
                    column='percent_vaccinated',
-                   legend=True, vmin=0, vmax=70,
+                   legend=True, vmin=0, vmax=100,
                    legend_kwds={'label': 'Percentage Vaccinated',
                                 'orientation': 'horizontal'})
     ax.set_title('Percentage of Population with '
