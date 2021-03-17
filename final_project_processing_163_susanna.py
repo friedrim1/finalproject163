@@ -1,9 +1,10 @@
 '''
 Matthew Friedrich
+Susanna Liu
 CSE 163 Section AG
 
 This file contains the functions get_filtered_data,
-get_q1_df, ______, get_q3_xy_df, and get_q3_map_df.
+get_q1_df, get_q2_map_df, get_q3_xy_df, and get_q3_map_df.
 Each of these functions are used to process data in
 the COVID-19 dataset acquired from Our World in Data.
 These functions are used in the file final_project_plotting.py,
@@ -110,7 +111,7 @@ def get_q1_df(filtered_data):
 
     return(adjusted_top_10_df)
 
-
+#### NEED COMMENTING ####
 def get_q2_map_df(filtered_data):
     '''
     Takes a filtered dataset as a parameter. Filters it down

@@ -1,8 +1,9 @@
 '''
 Matthew Friedrich
+Susanna Liu
 CSE 163 Section AG
 
-This file contains the functions get_q1_plot, ______,
+This file contains the functions get_q1_plot, get_q2_plot,
 get_q3_xy_plot, and get_q3_map_plot. Each function takes
 the output from a respective function in final_project_processing.py
 as a parameter. Then, each function outputs a plot, _____ as an
@@ -110,7 +111,7 @@ def get_q2_plot(q2_map_df):
                    legend_kwds={'label': 'Percentage Vaccinated',
                                 'orientation': 'horizontal'})
     ax.set_title('Percentage of Population with '
-                 'One Dose of COIVD-19 Vaccine by Country')
+                 'One Dose of COIVD-19 Vaccine by Nation')
     return(fig)
 
 
@@ -196,7 +197,7 @@ def get_q3_map_plot(q3_map_plot_df):
                         legend=True,
                         legend_kwds={'label': 'GDP Per Capita',
                                      'orientation': 'horizontal'})
-    ax.set_title('GDP Per Capita by Country (2011 $USD)')
+    ax.set_title('GDP Per Capita by Nation (2011 $USD)')
     return(fig)
 
 
